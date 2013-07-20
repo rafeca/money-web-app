@@ -24,7 +24,7 @@ define([
         'USD' : 1         // always include the base rate (1:1)
       };
 
-      this.$el.html(this.template());
+      this.$el.html(this.template()).show();
 
       _.each(Money.rates, function (rate, name) {
         var currency = new CurrencyModel({

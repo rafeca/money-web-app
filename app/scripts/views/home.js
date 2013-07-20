@@ -40,9 +40,7 @@ define([
         this.$('.amount input').focus()[0].setSelectionRange(
           this.baseAmount.length, this.baseAmount.length
         );
-      }
-
-      if (this.baseAmount) {
+      } else if (this.baseAmount) {
         var indexView = new IndexView({
           baseAmount: this.baseAmount,
           baseCurrency: this.baseCurrency,
