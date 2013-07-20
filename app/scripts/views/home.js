@@ -20,7 +20,8 @@ define([
     baseAmount: localStorage.getItem('baseAmount') || null,
 
     events: {
-      'keydown .amount input': 'handleKeyPress'
+      'keydown .amount input': 'handleKeyPress',
+      'blur .amount input': 'changeAmount'
     },
 
     render: function () {
@@ -61,10 +62,7 @@ define([
       }
 
       if (event.keyCode === 13) {
-        this.baseAmount = $this.val();
-        localStorage.setItem('baseAmount', $this.val());
-        this.render();
-        this.$el.addClass('collapsed');
+        this.changeAmount();
         return true;
       }
 
@@ -79,6 +77,15 @@ define([
         return true;
       }
       return false;
+    },
+
+    changeAmount: function () {
+      this.baseAmount = this.$('.amount input').val();
+      if (this.baseAmount) {
+        localStorage.setItem('baseAmount', this.baseAmount);
+        this.render();
+        this.$el.addClass('collapsed');
+      }
     },
 
     changeCurrency: function (currency) {
