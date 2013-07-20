@@ -41,6 +41,7 @@ ul
   height: 100%
   position: relative
   transition: height 0.5s
+  -webkit-transition: height 0.5s
 
   &.collapsed
     height: 7rem
@@ -74,6 +75,12 @@ ul
       line-height: 4rem
 
     &::-moz-placeholder
+      text-align: center
+      color: #d0d0d0
+      font-size: 1.8rem
+      line-height: 4rem
+
+    &:-moz-placeholder
       text-align: center
       color: #d0d0d0
       font-size: 1.8rem
