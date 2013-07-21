@@ -1,0 +1,14 @@
+{
+  "name": "Money",
+  "description": "Currency converter for FirefoxOS",
+  "launch_path": "index.html",
+  "icons": {
+    "60": "images/icons/icon-60.png"
+    "128": "images/icons/icon-128.png"
+  },
+  "developer": {
+    "name": "Rafael de Oleza",
+    "url": "http://rafeca.com"
+  },
+  "default_locale": "en"
+}

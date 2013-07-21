@@ -25,6 +25,8 @@ define([
     },
 
     render: function () {
+      var _this = this;
+
       this.$el.html(this.template({
         baseAmount: this.baseAmount,
         baseCurrency: this.baseCurrency
@@ -37,9 +39,12 @@ define([
       if (!this.launched) {
         this.launched = true;
         // focus place the cursor at the end of the input
-        this.$('.amount input').focus()[0].setSelectionRange(
-          this.baseAmount.length, this.baseAmount.length
-        );
+        setTimeout(function () {
+          _this.$('.amount input').focus()[0].setSelectionRange(
+            _this.baseAmount.length, _this.baseAmount.length
+          );
+        }, 500);
+
       } else if (this.baseAmount) {
         var indexView = new IndexView({
           baseAmount: this.baseAmount,
