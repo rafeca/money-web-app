@@ -3,7 +3,7 @@
   "description": "Currency converter for FirefoxOS",
   "launch_path": "index.html",
   "icons": {
-    "60": "images/icons/icon-60.png"
+    "60": "images/icons/icon-60.png",
     "128": "images/icons/icon-128.png"
   },
   "developer": {
