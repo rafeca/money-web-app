@@ -188,7 +188,7 @@ module.exports = function (grunt) {
           cwd: '<%= paths.app %>',
           dest: '<%= paths.dist %>',
           src: [
-            '*.{ico,txt}'
+            '*.{ico,txt,webapp}'
           ]
         }]
       }
