@@ -3,8 +3,8 @@
   "description": "Currency converter for FirefoxOS",
   "launch_path": "/money-web-app",
   "icons": {
-    "60": "images/icons/icon-60.png",
-    "128": "images/icons/icon-128.png"
+    "60": "/money-web-app/images/icons/icon-60.png",
+    "128": "/money-web-app/images/icons/icon-128.png"
   },
   "developer": {
     "name": "Rafael de Oleza",
