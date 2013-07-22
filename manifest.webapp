@@ -4,6 +4,7 @@
   "launch_path": "/money-web-app",
   "icons": {
     "60": "/money-web-app/images/icons/icon-60.png",
+    "64": "/money-web-app/images/icons/icon-64.png",
     "128": "/money-web-app/images/icons/icon-128.png"
   },
   "developer": {
